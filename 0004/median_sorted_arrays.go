@@ -1,15 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
-func main() {
-	nums1 := []int{1, 3, 4}
-	nums2 := []int{2, 5, 8, 10, 11}
-	fmt.Println(findMedianSortedArrays(nums1, nums2))
-}
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	if len(nums1) > len(nums2) {
@@ -45,10 +39,10 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 
 		if maxLeft1 <= minRight2 && maxLeft2 <= minRight1 {
 			if (m+n)%2 == 0 {
-				return (float64(max(maxRight1, maxRight2)) + float64(min(minLeft1, minLeft2))) / 2.0
+				return (float64(max(minRight1, minRight2)) + float64(min(maxLeft1, maxLeft2))) / 2.0
 			}
-			return float64(max(maxRight1, maxRight2))
-		} else if maxRight1 > minLeft2 {
+			return float64(max(minRight1, minRight2))
+		} else if minRight1 > maxLeft2 {
 			high = index1 - 1
 		} else {
 			low = index1 + 1
