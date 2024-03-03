@@ -1,9 +1,9 @@
 # Description
 
-The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
 ```json
-P A   H   N
+P   A   H   N
 A P L S I I G
 Y   I   R
 ```
@@ -27,10 +27,10 @@ string convert(string s, int numRows);
 Explanation:
 
 ```json
-P     I     N
-A   L S   I G
-Y A   H R
-P     I
+P     I     N   [0 = i + n * 2 - 2 - 2 * 0, 6 = i + n * 2 - 2]
+A   L S   I G   [4 = i + n * 2 - 2 - 2 * 1, 6 = i + n * 2 - 2]
+Y A   H R       [2 = i + n * 2 - 2 - 2 * 2, 6 = i + n * 2 - 2]
+P     I         [0 = i + n * 2 - 2 - 2 * 3, 6 = i + n * 2 - 2]
 ```
 
 Example 3:
