@@ -20,7 +20,7 @@ func Test_LongestPrefix(t *testing.T) {
 		},
 		{
 			[]string{"reflower", "flow", "flight"},
-			"fl",
+			"",
 		},
 	}
 
