@@ -9,7 +9,7 @@
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceFolder}/0004/main.go"
+            "program": "${workspaceFolder}/main.go"
         }
     ]
 }
