@@ -1,13 +1,12 @@
 package main
 
 import (
-	remove_duplicate "github.com/joaofilippe/leetcode-go/0026"
+	"github.com/joaofilippe/leetcode-go/0035"
 )
 
 func main() {
-	r := remove_duplicate.RemoveDuplicates([]int{1, 1, 2})
-	println(r == 2)
+	nums := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
+	target := 1
 
-	r = remove_duplicate.RemoveDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4})
-	println(r == 5)
+	searchinsert.SearchInsert(nums, target)
 }
