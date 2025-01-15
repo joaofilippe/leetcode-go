@@ -15,7 +15,7 @@ type Test struct {
 var tests = []Test{
 	{"", 0},
 	{"ABFCACDB", 2},
-	Test{"ACBBD", 5},
+	{"ACBBD", 5},
 }
 
 func Test_minLen(t *testing.T) {
