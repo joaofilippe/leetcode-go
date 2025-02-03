@@ -1,4 +1,4 @@
-package numrescueboats
+package sorts
 
 func quickSort(slc []int) []int {
 	sorted := make([]int, len(slc))

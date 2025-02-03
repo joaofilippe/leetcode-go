@@ -1,4 +1,4 @@
-package numrescueboats
+package sorts
 
 import (
 	"testing"
