@@ -1,6 +1,6 @@
 package sorts
 
-func quickSort(slc []int) []int {
+func QuickSort(slc []int) []int {
 	sorted := make([]int, len(slc))
 
 	copy(sorted, slc)
