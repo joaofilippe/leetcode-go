@@ -19,6 +19,6 @@ func Test_quickSort(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		assert.Equal(t, test.expected, quickSort(test.input))
+		assert.Equal(t, test.expected, QuickSort(test.input))
 	}
 }
